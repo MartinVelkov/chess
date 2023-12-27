@@ -1,0 +1,81 @@
+[debug] [2023-12-27T17:57:13.615Z] ----------------------------------------------------------------------
+[debug] [2023-12-27T17:57:13.618Z] Command:       /Users/martivelkov/.nvm/versions/node/v20.9.0/bin/node /Users/martivelkov/.nvm/versions/node/v20.9.0/bin/firebase init
+[debug] [2023-12-27T17:57:13.618Z] CLI Version:   13.0.2
+[debug] [2023-12-27T17:57:13.618Z] Platform:      darwin
+[debug] [2023-12-27T17:57:13.619Z] Node Version:  v20.9.0
+[debug] [2023-12-27T17:57:13.619Z] Time:          Wed Dec 27 2023 19:57:13 GMT+0200 (Eastern European Standard Time)
+[debug] [2023-12-27T17:57:13.619Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-27T17:57:13.622Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-12-27T17:57:13.702Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-27T17:57:13.703Z] > authorizing via signed-in user (martivelkov010@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/martivelkov/Desktop/chess-app
+
+[debug] [2023-12-27T17:57:14.040Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-12-27T17:57:14.041Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Account Setup
+[info] 
+[info] Which account do you want to use for this project? Choose an account or add a new one now
+[info] 
+[debug] [2023-12-27T17:57:59.512Z] setProjectAccount(/Users/martivelkov/Desktop/chess-app, martivelkov010@gmail.com)
+[info] 
+[info] ✔  Using account: martivelkov010@gmail.com 
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-12-27T17:58:02.800Z] > refreshing access token with scopes: []
+[debug] [2023-12-27T17:58:02.802Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-27T17:58:02.802Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-27T17:58:02.939Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-12-27T17:58:02.940Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-27T17:58:02.959Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-12-27T17:58:03.413Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-12-27T17:58:03.413Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project chess-royal-d3962 (Chess-royal) 
+[info] 
+=== Hosting Setup
+[debug] [2023-12-27T17:58:16.237Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chess-royal-d3962 [none]
+[debug] [2023-12-27T17:58:16.498Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chess-royal-d3962 200
+[debug] [2023-12-27T17:58:16.498Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chess-royal-d3962 {"projectId":"chess-royal-d3962","projectNumber":"851213226738","displayName":"Chess-royal","name":"projects/chess-royal-d3962","resources":{"hostingSite":"chess-royal-d3962"},"state":"ACTIVE","etag":"1_7b774afa-be6e-481f-a8a7-49f457efef82"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote public/404.html 
+[debug] [2023-12-27T17:58:34.801Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-12-27T17:58:34.924Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-12-27T17:58:34.925Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.7.1","browserURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.tgz"},"live":{"version":"10.7","browserURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.7.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.7.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /Users/martivelkov/Desktop/chess-app is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=210843227&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-12-27T18:03:09.981Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-12-27T18:03:09.981Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-12-27T18:03:10.267Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-12-27T18:03:10.267Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-12-27T18:03:10.319Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-12-27T18:03:10.648Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-12-27T18:03:10.648Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"MartinVelkov","id":148382677,"node_id":"U_kgDOCNgj1Q","avatar_url":"https://avatars.githubusercontent.com/u/148382677?v=4","gravatar_id":"","url":"https://api.github.com/users/MartinVelkov","html_url":"https://github.com/MartinVelkov","followers_url":"https://api.github.com/users/MartinVelkov/followers","following_url":"https://api.github.com/users/MartinVelkov/following{/other_user}","gists_url":"https://api.github.com/users/MartinVelkov/gists{/gist_id}","starred_url":"https://api.github.com/users/MartinVelkov/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/MartinVelkov/subscriptions","organizations_url":"https://api.github.com/users/MartinVelkov/orgs","repos_url":"https://api.github.com/users/MartinVelkov/repos","events_url":"https://api.github.com/users/MartinVelkov/events{/privacy}","received_events_url":"https://api.github.com/users/MartinVelkov/received_events","type":"User","site_admin":false,"name":"Martin","company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":0,"public_gists":0,"followers":1,"following":2,"created_at":"2023-10-18T18:44:07Z","updated_at":"2023-12-27T18:03:09Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as MartinVelkov 
+[info] 
